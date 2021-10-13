@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Calculator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="calculator">
+			<div class="calculator__header">
+				<h1 class="calculator__title">calc</h1>
+				<div class="calculator__switch">
+					<h6 class="calculator__name">THEME</h6>
+					<div class="calculator__themes">
+						<input class="calculator__theme theme1" id="theme1" type="radio" name="theme" value="0" checked>
+						<label for="theme1">1</label>
+						<input class="calculator__theme theme2" id="theme2" type="radio" value="1" name="theme">
+						<label for="theme2">2</label>
+						<input class="calculator__theme theme3" id="theme3" type="radio" value="2" name="theme">
+						<label for="theme3">3</label>
+					</div>
+				</div>
+			</div>
+			<div class="calculator__input">
+				<div data-previous-operand class="previous-operand"></div>
+				<div data-current-operand class="current-operand"></div>
+			</div>
+			<div class="calculator__grid">
+				<button data-num>7</button>
+				<button data-num>8</button>
+				<button data-num>9</button>
+				<button data-delete>DEL</button>
+				<button data-num>4</button>
+				<button data-num>5</button>
+				<button data-num>6</button>
+				<button data-operator>+</button>
+				<button data-num>1</button>
+				<button data-num>2</button>
+				<button data-num>3</button>
+				<button data-operator>-</button>
+				<button data-num>.</button>
+				<button data-num>0</button>
+				<button data-operator>/</button>
+				<button data-operator>×</button>
+				<button data-reset class="column-span">RESET</button>
+				<button data-output class="column-span">=</button>
+			</div>
+		</main>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
